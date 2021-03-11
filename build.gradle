@@ -22,10 +22,12 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven { url 'https://dl.bintray.com/sargunv/maven' }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.0-alpha08'
+        classpath 'com.android.tools.build:gradle:7.0.0-alpha09'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -38,6 +40,8 @@ subprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven { url 'https://dl.bintray.com/sargunv/maven' }
     }
 
     apply plugin: 'com.diffplug.spotless'
